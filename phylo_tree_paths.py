@@ -2,9 +2,9 @@ import dendropy
 import sys
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument("-n", "--newick", help = "Path to the input .json file to read mutations from")
+parser.add_argument("-n", "--newick", help = "Path to the input .nwk file to read traversal paths from")
 parser.add_argument("-o", "--output", help = "Path to output the mutations file")
-parser.add_argument("-r", "--root", help = "Type of mutation to find, use nuc")
+parser.add_argument("-r", "--root", help = "Path to the input .json file to read mutations from")
 args = parser.parse_args()
 
 def preorder_traversal_paths(node, path, paths):
